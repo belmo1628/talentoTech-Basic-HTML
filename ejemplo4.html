@@ -1,0 +1,169 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <table style="background: aquamarine;">
+        <tr style="background-color: brown; color: white;">
+            <th>NOMBRE</th>
+            <th>CORREO</th>
+            <th>CIUDAD</th>
+            <th>EDAD</th>
+            <th>PROFESIÓN</th>
+        </tr>
+        <tr>
+            <td style="border: lpx solid black">NELSON BELTRÁN</td>
+            <td>belmo.ing@gmail.com</td>
+            <td>Bogotá</td>
+            <td>58</td>
+            <td>Ingeniero Civil</td>
+        </tr>
+        <tr>
+            <td>LUIS BELTRAN</td>
+            <td>niko.beltrangarcia@gmail.com</td>
+            <td>Bogotá</td>
+            <td>23</td>
+            <td>Ingeniero Civil</td>
+        </tr>
+        <tr>
+            <td>EMMA BELTRAN</td>
+            <td>emmita.beltrangarcia@gmail.com</td>
+            <td>Bogotá</td>
+            <td>19</td>
+            <td>Ingeniero biomédico</td>
+        </tr>
+        <tr>
+            <td>LUZ MERY GARCÍA</td>
+            <td>luzgarcia66@gmail.com</td>
+            <td>Bogotá</td>
+            <td>57</td>
+            <td>Ingeniero alimentos</td>
+        </tr>
+        <tr>
+            <td>LUZ MARY BELTRÁN</td>
+            <td>luzbeltran@gmail.com</td>
+            <td>Bogotá</td>
+            <td>53</td>
+            <td>Estilista</td>
+        </tr>
+        <tr>
+            <td>AGUSTÍN GUERRERO</td>
+            <td>agusguer@gmail.com</td>
+            <td>Bogotá</td>
+            <td>57</td>
+            <td>Inspector</td>
+        </tr>
+        <tr>
+            <td>LUIS MOJICA</td>
+            <td>lhmojica@hotmail.com</td>
+            <td>Guatemala</td>
+            <td>57</td>
+            <td>Ingeniero civil</td>
+        </tr>
+        <tr>
+            <td>ALEJANDRO GHERRERO</td>
+            <td>alejoguer@gmail.com</td>
+            <td>Bogotá</td>
+            <td>19</td>
+            <td>Especialista idiomas</td>
+        </tr>
+        <tr>
+            <td>IVAN GIRALDO</td>
+            <td>alejoguerivang@gmail.com</td>
+            <td>Bogotá</td>
+            <td>54</td>
+            <td>Ingeniero Civil</td>
+        </tr>
+        </th>
+    </table>
+    <br>
+    <br>
+    <!-- Formulario -->
+    <form method="POST">
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="Nombre"> 
+        <!-- Salto de linea -->
+        <br>
+        <!-- Campo Fecha -->
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+        <br>
+        <!-- Campo Numerico -->
+        <label for="">Ingresos mensuales</label>
+        <input type="number" required placeholder="Salario mensual" name="salario">
+        <br>
+        <!-- Campo Email -->
+        <label for="">Correo electronico</label>
+        <input type="email" required placeholder="Ingresar Email" name="email"> <br>
+        <!-- Campo Archivo -->
+        <label for="">Subir CV</label>
+        <input type="file" required placeholder="Subir Archivo" accept="image/*" name="cv"> <br>
+        <!-- Campo password -->
+        <label for="">Password</label>
+        <input type="password" required name="pasword"> <br>
+        <!-- Campo Hora -->
+        <label for="">Hora de ingreso</label>
+        <input type="time" required name="time"> <br>
+        <!-- Campo Mes -->
+        <label for="">Mes de ingreso a la empresa</label>
+        <input type="month" required name="month"> <br>
+        <!-- Campo Color -->
+        <label for="">Color del uniforme</label>
+        <input type="color" required name="color_uniforme"> <br>
+        <!-- Campo Radio -->
+        <label for="">Genero</label>
+        <input type="radio" name="genero" value="F" required name="F">
+        <label for="">Femenino</label>
+        <input type="radio" name="genero" value="M" required name="M">
+        <label for="">Masculino</label> <br>
+        <!-- Campo Checkbox -->
+        <label for="">Dias Laborados</label>
+        <input type="checkbox" name="dias" value="1" name="1">
+        <label for="">Lunes</label>
+        <input type="checkbox" name="dias" value="2" name="2">
+        <label for="">Martes</label>
+        <input type="checkbox" name="dias" value="3" name="3">
+        <label for="">Miercoles</label>
+        <input type="checkbox" name="dias" value="4" name="4">
+        <label for="">Jueves</label>
+        <input type="checkbox" name="dias" value="5" name="5">
+        <label for="">Viernes</label> <br>
+        <!-- Campo URL -->
+        <label for="">Link Perfil Linkedin</label>
+        <input type="url" required name="url"> <br>
+        <!-- Campo Telefono -->
+        <label for="">Telefono</label>
+        <input type="tel" required name="tel"> <br>
+        <!-- Selector -->
+        <label for="">Escoja una ciudad</label>
+        <select name="" id="" required name="Ciudad">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+        </select> <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Informacion General</legend>
+            <!-- Text Area -->
+            <label for="">Descripcion del Perfil</label>
+            <textarea name="" id=""></textarea> <br>
+            <label for="">Tipo documento</label>
+            <input list="documento" name="documento">
+            <!-- Datalist -->
+            <datalist id="documento">
+                <option value="Cedula">Cedula</option>
+                <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </datalist> <br>
+            <label for="">Cedula</label>
+            <input type="text" name="text">
+        </fieldset>
+        
+        <!-- Button -->
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

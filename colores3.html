@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1 bordes">
+        <i class="fa-brands fa-facebook"></i>
+        Elemento 1
+    </div>
+    <div class="color2 bordes margenes padding"> 
+        <i class="fa-solid fa-user-doctor"></i>
+        Elemento 2
+    </div>
+    <div>
+        <h1 class="text-shadow">Titulo <i class="fa-solid fa-bath"></i></h1>
+        <p class="alineacion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis in amet minima aut praesentium, expedita inventore nostrum quibusdam a et. Ducimus nisi asperiores, enim maxime repudiandae praesentium esse sit.</p>
+    </div>
+    <button>Medico <i class="fa-solid fa-heart"></i></button> <br>
+    <a href="https://campus.talentotechbogota.co" class="enlace" target="_blank">TalentoTech</a>
+
+    <div>
+        <h1>Listas</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>Pereira</td>
+                <td>ruiz@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cucuta</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">
+            Relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">
+                    Fijado
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius doloremque excepturi perspiciatis repellendus accusantium magnam asperiores veritatis nam ullam quam porro, veniam illo officiis possimus? Earum dolorem veniam cupiditate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Float</h1>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos iusto debitis, maxime vero nemo, quasi, itaque soluta quod tenetur perspiciatis asperiores rem facere distinctio consectetur ratione quidem fugit saepe consequuntur.
+                <img class="float" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHf9JcVsqVK9ruBQ91PTP7y6XgEgJQ-i7PkQ&s">
+            </p>            
+        </div>
+    </div>
+
+    <div>
+        <h1>Imagenes</h1>
+        <img class="imagen1" src="https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg" alt="">
+
+        <img class="imagen2" src="https://familia.edu.mx/wp-content/uploads/2020/03/que-es-la-persona-2.jpg" alt="">
+
+        <img class="imagen3" src="https://www.mundopsicologos.com/site/article/60606/50895/las-10-cualidades-de-una-persona-mas-valoradas-0_ai1.jpg" alt="">
+    </div>
+    <div class="transition">
+        <h1>Transicciones</h1>
+    </div>
+    <div class="animation">
+        <h1>Animación</h1>
+    </div><br>
+    <form action="">
+      <label for="">Nombre</label>
+      <input type="text" placeholder="Nombre">
+      <label for="">Descripción</label>
+      <textarea name="" id=""></textarea>
+      <label for="">País</label>
+      <select name="" id="">
+        <option value="">Colombia</option>
+        <option value="">Canadá</option>
+        <option value="">Chile</option>
+      </select>
+      <button>Enviar</button>
+    </form>
+    <h1>Grid</h1>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+<style>
+    .color1 {
+        background-color: tomato;
+        color: #C5D61D;
+        border: solid;
+        border-color: rgb(9, 42, 205);
+        opacity: 0.5;
+    }
+
+    .color2{
+        /* Tamaño del elemento */
+        width: 80%;
+        height: 300px;
+        /* Imagen de fondo */
+        background-image: url("https://acis.org.co/portal/sites/default/files/mintic.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll; 
+                
+    }
+
+    .bordes {
+        /* Bordes */
+        border-style: dotted solid dashed double;
+        border-color: #15e2c0;
+        border-width: 10px;
+        border-radius: 200px;
+    }
+
+    .margenes {
+        /* Margenes */
+        margin-left: 50px;
+        margin-top: 100px; 
+        margin-bottom: 30px;
+    }
+
+    .padding {
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .alineacion-texto {
+        text-align: center;
+        text-align-last: right;
+        /* direction: rtl; */
+        /* unicode-bidi: bidi-override; */
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 10px;
+        
+        text-transform: capitalize;
+        text-indent: 100px;
+        letter-spacing: 5px;
+        line-height: 2;
+        word-spacing: 10px;
+
+        font-weight: bold;
+    }
+
+    .text-shadow {
+        color: tomato;
+        text-shadow: 2px 2px 5px #e215b6;
+        font-family: 'Audiowide', sans-serif;
+        font-style: oblique;
+        font-size: 60px;        
+    }
+    /* PsuedoClases */
+    .enlace {
+        text-decoration: none;
+        background-color: #de39b4;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: yellow;
+        border-style: solid;
+        display: inline-block;
+        text-align: center;
+        cursor: progress;
+    }
+    .enlace:hover {
+        color: #C5D61D;
+        background-color: aquamarine;
+    }
+
+    .enlace:active {
+        color: #15e2c0;
+    }
+
+    ul>li {
+       list-style-type: square; 
+       background-color: white;
+       display: inline;
+       visibility: hidden;
+    }
+
+    ul {
+        background-color: tomato;
+        opacity: 0.6;
+        padding: 20px;
+    }
+    /* Estilos Tabla */
+    table#estilo-tabla {
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-color: #2260bd;
+    }
+
+    table#estilo-tabla tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    table#estilo-tabla tr:hover {
+        background-color: #C5D61D;
+        color: aliceblue;
+    }
+
+    table#estilo-tabla th {
+        background-color: #04918a;
+        color: rgb(167, 240, 140);
+    }
+
+    /* Se adapata a la posicion del padre */
+    .relative {
+        border: 3px solid #2260bd;
+        width: 400px;
+        height: 200px;
+        position: relative;
+    }
+
+    /* Mantiene su posicion fija */
+    .absolute {
+        border: 3px solid #e215b6;
+        width: 200px;
+        height: 100px;
+        right: 0;
+        top: 80px;
+        position: absolute;
+
+        /* Alienacion */
+        text-align: right;
+    }
+
+    .fixed {
+        border: 3px solid green;
+        width: 100px;
+        height: 50px;
+        left: 0;
+        top: 200px;
+        position: fixed;
+        background-color: #C5D61D;
+
+        /* Desbordado */
+        overflow: auto;
+    }
+
+    .float {
+        width: 100px;
+        height: 150px;
+        float: left;
+    }
+
+    /* PseudoElementos */
+    h1::first-letter {
+        color: red;
+        background-color: aquamarine;
+        font-size: 50px;
+        border-style: solid;
+    }
+
+    .imagen1 {
+        width: 30%;
+        border-radius: 100px;
+        border: 1px solid black;
+        padding: 10px;
+        outline-color: #e215b6;
+        outline-style: solid;
+    }
+
+    .imagen2 {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: 5px 1px 20px red;
+    }
+
+    .imagen3 {
+        width: 40%;
+        display: block;
+        margin-top: 50px;
+
+        filter: blur(4px); /*Difuminar*/
+        filter: brightness(250%); /*Brillo*/
+        filter: contrast(180%); /*Contraste*/
+        filter: grayscale(80%); /* Escala de Grises*/
+        filter: hue-rotate(180deg); /* Escala de Grises*/
+        filter: invert(60%); /* Inversion de colores*/
+        filter: saturate(5); /* Saturacion */
+        filter: sepia(50%); /* Sepia */
+        filter: opacity(50%); /* Opacidad */
+
+    }
+    .imagen3 :hover {
+        width: 70%;
+        transition: width 2s, heigth 4s ;
+    }
+    .transition {
+        background-color: tomato;
+        width: 20%;
+        height: 100px;
+        transition: width 2s, transform 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+    }
+    .transition :hover {
+        width: 30%;
+        transform: rotate(90deg);
+        transform: translate(120px 50%);
+        transform: scale(0.5) translate(-100%, -100%);
+        
+    }
+   .animation {
+    width: 25%;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: ejemplo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes ejemplo {
+        0%{border-radius:  5px; background-color: red; left:0; top: 0 }
+        25%{border-radius:  20px; background-color: yellow; left:200px; top: 0 }
+        50%{border-radius:  50px; background-color: blue; left:200px; top: 200px }
+        75%{border-radius:  20px; background-color: green; left:0px; top: 200px }
+        100%{border-radius: 5px; background-color: red; left:0px; top: 0px }
+    }
+
+    input, textarea, select{
+        width: 100px;
+        padding: 10px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid #04918a;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        border-radius: 5px;
+        color: white;
+        background-color: chocolate;
+        padding: 10px 20px;
+        width: 100%;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    button :hover{ 
+        background-color: rgb(223, 143, 85);
+     }
+     label{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+        font-weight: bold;
+     }
+     .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: #15e2c0;
+        padding: 10px;
+     }
+    .grid > div {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+    @media screen and (max-width: 600px) {
+        button {
+            width: 200px;
+            background-color: #e215b6;
+                    }
+     @media screen and (min-width: 600px) {
+        button {
+            width: 50%;
+            background-color: #2260bd;
+        }    
+    }
+</style>
+</html>

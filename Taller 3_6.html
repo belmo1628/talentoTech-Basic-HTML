@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Ejercicio 6: Convertir un número a un día de la semana
+    // Escribe un programa que solicite un número del 1 al 7 y muestre el día correspondiente de la semana (1 = Lunes, 2 = Martes, etc.).
+  var numeroSemana = parseInt(prompt("Ingrese el numero de la semana:"))
+  var nombreSemana = ""
+  if(numeroSemana > 0 && numeroSemana <= 7){
+    switch(numeroSemana){
+        case 1:
+            nombreSemana = "Lunes"
+            break;
+        case 2:
+            nombreSemana = "Martes"
+            break;
+        case 3:
+            nombreSemana = "Miércoles"
+            break;
+        case 4:
+            nombreSemana = "Jueves"
+            break;
+        case 5:
+            nombreSemana = "Viernes"
+            break;
+        case 6:
+            nombreSemana = "Sábado"
+            break;
+        case 7:
+            nombreSemana = "Domingo"
+            break;
+    }
+
+    document.write(+numeroSemana+" = " + nombreSemana)
+}else{
+    document.write("El mes ingresado no es valido")
+}
+</script>
+</html>

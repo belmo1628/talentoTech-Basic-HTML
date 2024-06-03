@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="titulo">BBS INGENIERÍA SAS</title>
+	<style>
+	body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+	.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	}
+	.logo {
+	text-align: center;
+	margin-bottom: 20px;
+	}
+	.logo img {
+	max-width: 200px; /* Ajusta el tamaño de la imagen a 200px de ancho */
+	height: auto; /* Mantiene la relación de aspecto de la imagen */
+	}
+	.services {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 20px;
+	}
+	.services li {
+	margin-bottom: 10px;
+	}
+	.contact {
+	margin-bottom: 20px;
+	}
+	.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	}
+	.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+	</style>
+	</head>
+	<body id ="body">
+		<div class="selector-tema">
+			<select name="" id="tema" onchange="cambiarTema()">
+				<option value="light">Claro</option>
+				<option value="dark">Oscuro</option>
+				<option value="crazy">Loco</option>
+			</select>
+		</div>
+	<div class="container">
+	<div class="logo">
+	<img class="imagen1" src="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/438300475_785868016975935_7677834054448856311_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Oj5JkUrF-zAQ7kNvgH28Ulp&_nc_ht=scontent.fnva1-1.fna&oh=00_AYATXs9GuAYnOXzKucSjskwQ1ZTZ_DIt6w5quFRHH2gYLQ&oe=665C5AD1" alt="BBS Logo">
+	<select onchange="cambiarTamanoLogo(value)">
+    <option value="small">Pequeño</option>
+    <option value="medium">Mediano</option>
+    <option value="large">Grande</option>
+    </select>
+    <h1>BBS INGENIERIA SAS</h1>
+    </div>
+	<p>Empresa dedicada a prestar servicios profesionales de asesoría en Ingeniería Civil</p>
+	<h2 class="titulo">SERVICIOS</h2>
+	<ul class="services">
+	<li>Diseño geométrico de vías</li>
+	<li>Diseño de pavimentos rígidos y flexibles</li>
+	<li>Análisis y Diseños geotécnicos</li>
+	<li>Diseños de Programas de Gerencia</li>
+	<li>Diseño e implementación de Planes de Calidad en vías</li>
+	<li>Análisis y diseños estructurales especiales</li>
+	<li></li>
+	</ul>
+	<div class="contact">
+	<h3 class="titulo">DATOS DE CONTACTO</h3>
+	<p>Teléfono: +57 3163084290</p>
+	<p>Correo Electrónico: bbs.ingenieria.sas@gmail.com</p>
+	</div>
+	<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qJX89OMWsnU?si=dpR_gH5mKcFuPViI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	</div>
+	</body>
+	</html>
+	<br>
+	<h1 class="titulo">FORMULARIO DE CONTACTO</h1>
+	<!-- Formulario -->
+    <form method="POST" action="">
+	    <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="Nombre"> <br> 
+		<label for="">Apellidos</label>
+        <input type="text" placeholder="Escriba los apellidos" required name="Apellidos"> <br> 
+		<br>
+	<!-- Selector -->
+	<label for="">Documento de Identidad</label>
+		<select name="" id="" required name="Documento_de_identidad">
+			  <option value="">-</option>
+			  <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+			  <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+			  <option value="Pasaporte">Pasaporte</option>
+			  <label for="">Documento de identidad</label>
+			  <input type="text" name="text">
+		</select> <br>
+	<!-- Selector -->
+      <label for="">Ciudad</label>
+      <select name="" id="" required name="Ciudad">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+      </select> <br>
+	  <label for="">Teléfono</label> 
+	  <input type="tel" placeholder="Escriba el número de Teléfono" required name="tel"> 
+	  <br>
+	  <label for="">Dirección</label> 
+	  <input type="text" placeholder="Escriba la dirección" required name="dir"> 
+	  <br>
+	  <label for="">Correo electrónico</label> 
+	  <input type="email" placeholder="Escriba el correo electrónico" required name="email"> 
+	  <br>
+	  <!--documentos anexos-->
+	  <label for="">Documentos anexos</label>
+        <input type="file" required placeholder="Subir documentos anesos" accept="image/*" name="file"> <br>
+	  <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+        <br>
+<!-- Button -->
+<button onclick="enviarFormulario()">Enviar</button>
+<body>
+	<!--TABLA DE PROYECTOS-->
+	<h1 class="titulo">PROYECTOS EN EL AÑO 2023</h1>
+	<table id="estilo-tabla" style="background: aquamarine;">
+        <tr style="background-color: brown; color: white;">
+            <th>PROYECTO</th>
+            <th>FECHA</th>
+            <th>CIUDAD</th>
+            <th>VALOR (Miles de $)</th>
+        </tr>
+        <tr>
+            <td style="border: lpx solid black">Diagnóstico y Diseño puente el Morro</td>
+            <td>Enero 2023</td>
+            <td>Tumaco</td>
+            <td>355000</td>
+        </tr>
+		<tr>
+            <td>Diagnóstico y Diseño puente el Pindo</td>
+            <td>Febrero 2023</td>
+            <td>Tumaco</td>
+            <td>255000</td>
+        </tr>
+		<tr>
+            <td>Diagnóstico y Diseño puente Agua Clara</td>
+            <td>Marzo 2023</td>
+            <td>Tumaco</td>
+            <td>325000</td>
+        </tr>
+		<tr>
+            <td>Elaboración e implantación Programa de Gerencia</td>
+            <td>Abril 2023</td>
+            <td>Tumaco</td>
+            <td>255000</td>
+        </tr>
+		<tr>
+            <td>Diseño estructural Placa Huella</td>
+            <td>Mayo 2023</td>
+            <td>Ataco</td>
+            <td>315000</td>
+        </tr>
+		<tr>
+            <td>Diseño estructural Placa Huella y pontón</td>
+            <td>Junio 2023</td>
+            <td>Cármen de Chucurí</td>
+            <td>415000</td>
+        </tr>
+		<tr>
+            <td>Diseño geométrico y estructural Placa Huella</td>
+            <td>Julio 2023</td>
+            <td>Guasca</td>
+            <td>385000</td>
+        </tr>
+		<tr>
+            <td>Curso para operadores instalación mezclas asfálticas</td>
+            <td>Agosto 2023</td>
+            <td>San Antonio</td>
+            <td>125000</td>
+        </tr>
+		<tr>
+            <td>Elaboración e implantación Programa de Gerencia</td>
+            <td>Septiembre 2023</td>
+            <td>Líbano</td>
+            <td>280000</td>
+		<tr>
+			<td>Análisis financiero Proyectos de vías</td>
+			<td>Octubre 2023</td>
+			<td>Leticia</td>
+			<td>220000</td>
+		</tr>
+		<tr>
+			<td>Elaboración Planes de Calidad</td>
+			<td>Noviembre 2023</td>
+			<td>Líbano</td>
+			<td>45000</td>
+		</tr>
+		<tr>
+            <td>Diseño Obras de Contención vía la Palma-Pacho</td>
+            <td>Diciembre 2023</td>
+            <td>La Palma</td>
+            <td>355000</td>
+		</tr>
+        </th>
+    </table>
+	<br>
+	<br>
+	<br>
+</body>
+<Style>
+	.imagen1 {
+        width: 30%;
+        border-radius: 100px;
+        border: 1px solid black;
+        padding: 5px;
+        outline-color: #e215b6;
+        outline-style: solid;
+		margin: auto;
+		box-shadow: 5px 1px 25px red;
+    }
+	.titulo {
+		color: tomato;
+        text-shadow: 2px 2px 5px #e215b6;
+        font-family: 'Audiowide', sans-serif;
+        font-style: oblique;
+        font-size: 30px;        
+		text-align: initial;
+		}
+	/* Estilos del Formulario */
+	input, textarea, select {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid #04918a;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+	/* MedaQueries Para diseño Responsive */
+    @media screen and (max-width: 600px) {
+        button {
+            width: 200px;
+            background-color: #15e237;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        button {
+            width: 70%;
+            background-color: #bc24a0;
+			font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 30px;   
+			color: rgb(40, 241, 134);     
+        }
+    }
+/* Estilos Tabla */
+table#estilo-tabla {
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-color: #2260bd;
+    }
+
+    table#estilo-tabla tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    table#estilo-tabla tr:hover {
+        background-color: #C5D61D;
+        color: aliceblue;
+    }
+
+    table#estilo-tabla th {
+        background-color: #04918a;
+        color: rgb(167, 240, 140);
+    }
+	ul>li {
+       list-style-type: square; 
+       background-color: white;
+       
+    
+    }
+
+    ul {
+        background-color: #bc24a0;
+        opacity: 0.6;
+        padding: 20px;
+    }
+</Style>
+<script>
+    function cambiarTema(){
+        // Elemento que va cambiar
+        var body = document.getElementById("body")
+        // Valor del selector de temas
+        var tema = document.getElementById("tema").value
+        var fondo = ""
+        var letra = ""
+        if(tema == "light"){
+            fondo = "white"
+            letra = "black"
+        } else if(tema == "dark"){
+            fondo = "black"
+            letra = "white"
+        } else if(tema == "crazy"){
+            fondo = "tomato"
+            letra = "yellow"
+        }
+        // Modificamos el estilo de la pagina
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
+
+    function enviarFormulario(){
+        var nombre = document.getElementById("nombre").value
+        var apellidos = document.getElementById("apellidos").value
+        // Agregar los campos que faltan
+
+        if(nombre && apellidos){
+            alert("Los datos del formulario son: " + nombre + " " + apellidos)
+        }
+    }
+    function cambiarTamañoLogo(tamano) {
+        var logo = document.getElementById("logo")
+        var tamanoLogo = 0
+       if(tamano == "small"){
+            tamanoLogo = 300
+       }else if(tamano == "medium"){
+            tamanoLogo = 600
+       }else if(tamano == "large"){
+            tamanoLogo = 900
+        }
+        logo.style.width = tamanoLogo + "px"
+    }
+</script>

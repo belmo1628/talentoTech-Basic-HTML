@@ -1,0 +1,110 @@
+[
+    {
+        "nombre": "Leonel",
+        "apellidos": "Messi",
+        "edad": 34,
+        "mascotas": [
+            {
+                "nombre": "Firulais",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Pepe",
+                "tipo": "Loro"  
+
+        }]
+
+    },
+    {
+        "nombre": "Leonel",
+        "apellidos": "Messi",
+        "edad": 34,
+        "mascotas": [
+            {
+                "nombre": "Firulais",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Pepe",
+                "tipo": "Loro"  
+
+        }]
+
+    },
+    {
+        "nombre": "Emma",
+        "apellidos": "Beltrán",
+        "edad": 19,
+        "mascotas": [
+            {
+                "nombre": "Tony",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Eris",
+                "tipo": "Gato"  
+
+        }]
+
+    },
+    {
+        "nombre": "Luis",
+        "apellidos": "Beltrán",
+        "edad": 24,
+        "mascotas": [
+            {
+                "nombre": "Nix",
+                "tipo": "Gato"
+            
+        }]
+
+    },
+    {
+        "nombre": "Luz",
+        "apellidos": "García",
+        "edad": 58,
+        "mascotas": [
+            {
+                "nombre": "Tiburón",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Crispín",
+                "tipo": "Canario"  
+
+        }]
+
+    },
+    {
+        "nombre": "Hilda",
+        "apellidos": "Ríos",
+        "edad": 64,
+        "mascotas": [
+            {
+                "nombre": "Toby",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Chepe",
+                "tipo": "Loro"  
+
+        }]
+
+    },
+    {
+        "nombre": "Ricardo",
+        "apellidos": "Mojica",
+        "edad": 58,
+        "mascotas": [
+            {
+                "nombre": "Lukas",
+                "tipo": "Perro"
+            },
+            {
+                "nombre": "Mirringo",
+                "tipo": "Gato"  
+
+        }]
+
+    }
+]

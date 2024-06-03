@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Ejercicio 4: Determinar el mayór de dos números
+    // Escribir un programa que solicite dos números al usuariony luego imprima cual de ellos es mayor o si son iguales
+    var num1 = parseFloat(prompt("Ingrese primer número: "))
+    var num2 = parseFloat(prompt("Ingrese segundo número: "))
+    var mensaje =""
+        if(num1 == num2){
+            mensaje = ("Los números son iguales")
+        } else if(num1>num2){
+            mensaje = ("El número "+ num1 +" es mayor que el número "+ num2)
+        }else{
+            mensaje = ("El número "+ num1 +" es menor que el número "+ num2)
+        }
+       
+       document.write(mensaje)
+</script>
+</html>

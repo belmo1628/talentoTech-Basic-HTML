@@ -9,62 +9,62 @@
     
 </body>
 <script>
-    // var nota = parseFloat(prompt("Ingrese la nota:")) //3.5
-    // if(nota >= 3){
-    //     document.write("Aprobado")
-    // } else {
-    //     document.write("Reprobado")
-    // }
+    // var nota = parseFloat(prompt("Ingrese la nota:"))
+     if(nota >= 3){
+       document.write("Aprobado")
+ } else {
+     document.write("Reprobado")
+}
 
     /* Ingresar una tempratura, si es mayor que 20 imprimir 
         "Esta haciendo calor"
         sino imprimir "Esta haciendo frio"
         si es igual a 18 imprimit "El clima esta perfecto"
     */
-    // var tempratura = parseFloat(prompt("Ingrese la temperatura"))
-    // if(tempratura > 20){
-    //     document.write("Esta haciendo calor")
-    // } else if(tempratura == 18){
-    //     document.write("El clima esta perfecto")
-    // } else{
-    //     document.write("Esta haciendo frio")
-    // }
+var tempratura = parseFloat(prompt("Ingrese la temperatura"))
+ if(tempratura > 20){
+    document.write("Esta haciendo calor")
+} else if(tempratura == 18){
+    document.write("El clima esta perfecto")
+} else{
+   document.write("Esta haciendo frio")
+}
 
     /** Ingresando una estacion, imprimir si es tiempo de sembrar,
      * teniendo en cuenta que solo se puede sembrar en verano U otoño
      * de lo contrario imprimir "No es tiempo de sembrar"
      * */
-    // var estacion = prompt("Ingrese la estacion del año")
-    // var mensaje = ""
-    // if(estacion == "Verano" || estacion == "Otoño"){ // Si 
-    //     mensaje = "Es buen tiempo para sembrar" // Entonces
-    // }else{
-    //     mensaje = "No es tiempo de sembrar" // Sino
-    // }
-    // document.write(mensaje)
+var estacion = prompt("Ingrese la estacion del año")
+var mensaje = ""
+if(estacion == "Verano" || estacion == "Otoño"){
+     mensaje = "Es buen tiempo para sembrar"
+ }else{
+    mensaje = "No es tiempo de sembrar"
+ }
+ document.write(mensaje)
 
     /**
      * Implementar un algoritmo que reciba 2 numeros y una operacion,
      * validar por el nombre de la operacion cual se debe realizar y 
      * mostrar en pantalla el resultado obtenido
     */
-//    var num1 = parseFloat(prompt("Ingrese el numero 1:"))
-//    var num2 = parseFloat(prompt("Ingrese el numero 2:"))
-//    var operacion = prompt("Ingrese la operacion a realizar")
-//    var resultado = 0
-//    if(operacion == "Suma"){
-//     resultado = num1+num2
-//    }else if(operacion == "Resta"){
-//     resultado = num1-num2
-//    }else if(operacion == "Multiplicacion"){
-//     resultado = num1*num2
-//    }else if(operacion == "Division"){
-//     resultado = num1/num2
-//    }else{
-//     document.write("La operacion no existe")
-//    }
-//    // Potenciacion y el residuo
-//    document.write("El resultado de la " + operacion + " es: " + resultado)
+  var num1 = parseFloat(prompt("Ingrese el numero 1:"))
+  var num2 = parseFloat(prompt("Ingrese el numero 2:"))
+  var operacion = prompt("Ingrese la operacion a realizar")
+var resultado = 0
+  if(operacion == "Suma"){
+  resultado = num1+num2
+  }else if(operacion == "Resta"){
+  resultado = num1-num2
+  }else if(operacion == "Multiplicacion"){
+  resultado = num1*num2
+ }else if(operacion == "Division"){
+     resultado = num1/num2
+   }else{
+     document.write("La operacion no existe")
+    }
+    // Potenciacion y el residuo
+    document.write("El resultado de la " + operacion + " es: " + resultado)
 
    /* Implementar un algoritmo que reciba una nota,
     Si la nota es menor 3 imprimir "I"
@@ -73,77 +73,45 @@
     Si la nota es igual a 5 imprimir "E"
     Tener en cuenta que solo se pueden ingresar notas entre 0 y 5
    */
-//   var nota = parseFloat(prompt("Ingrese la nota:"))
-//   var letra = ""
-//   if(nota >= 0 && nota < 3){
-//     letra = "I"
-//   }else if(nota >= 3 && nota < 4){
-//     letra = "A"
-//   }else if(nota >= 4 && nota < 5){
-//     letra = "S"
-//   }else if(nota == 5){
-//     letra = "E"
-//   }else{
-//     document.write("La nota no es valida")
-//   }
+  var nota = parseFloat(prompt("Ingrese la nota:"))
+   var letra = ""
+   if(nota >= 0 && nota < 3){
+     letra = "I"
+   }else if(nota >= 3 && nota < 4){
+    letra = "A"
+  }else if(nota >= 4 && nota < 5){
+     letra = "S"
+  }else if(nota == 5){
+    letra = "E"
+   }else{
+     document.write("La nota no es valida")
+   }
 
-//   if(letra != ""){
-//     document.write("La letra asociada a la nota es: " + letra)
-//   }
+  if(letra != ""){
+     document.write("La letra asociada a la nota es: " + letra)
+   }
 
   /** Switch */
   /* Dado el numero de un mes devolver su nombre */
-//   var numeroMes = parseInt(prompt("Ingrese el numero del mes:"))
-//   var nombreMes = ""
-//   if(numeroMes > 0 && numeroMes <= 12){
-//     switch(numeroMes){
-//         case 1:
-//             nombreMes = "Enero"
-//             break;
-//         case 2:
-//             nombreMes = "Febrero"
-//             break;
-//         case 3:
-//             nombreMes = "Marzo"
-//             break;
-//     }
+  var numeroMes = parseInt(prompt("Ingrese el numero del mes:"))
+  var nombreMes = ""
+  if(numeroMes > 0 && numeroMes <= 12){
+    switch(numeroMes){
+        case 1:
+            nombreMes = "Enero"
+            break;
+        case 2:
+            nombreMes = "Febrero"
+            break;
+        case 3:
+            nombreMes = "Marzo"
+            break;
+    }
 
-//     document.write("El mes ingresado es: " + nombreMes)
-// }else{
-//     document.write("El mes ingresado no es valido")
-// }
-
-/**
- * 
- * Ejercicio 7: Determinar la estación del año según el mes [Swtich]
-Escribe un programa que solicite un número de mes (1-12) y determine la estación del año (primavera, verano, otoño, invierno).
-*/
-var mes = parseInt(prompt("Ingrese el mes:"))
-
-switch(mes){
-    case 2:
-    case 3:
-    case 4:
-        document.write("Es primavera")
-        break;
-    case 5:
-    case 6:
-    case 7:
-        document.write("Es verano")
-        break;
-    case 8: 
-    case 9:
-    case 10:
-        document.write("Es Otoño")
-        break;
-    case 11:
-    case 12:
-    case 1:
-        document.write("Es invierno")
-        break;
+    document.write("El mes ingresado es: " + nombreMes)
+}else{
+    document.write("El mes ingresado no es valido")
 }
-
-
 
 
 </script>

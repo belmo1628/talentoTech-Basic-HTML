@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1 bordes">
+        Elemento 1
+    </div>
+    <div class="color2 bordes margenes padding"> 
+        <i class="fa-solid fa-user-doctor"></i>
+        Elemento 2
+    </div>
+    <div>
+        <h1 class="text-shadow">Titulo <i class="fa-solid fa-bath"></i></h1>
+        <p class="alineacion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis in amet minima aut praesentium, expedita inventore nostrum quibusdam a et. Ducimus nisi asperiores, enim maxime repudiandae praesentium esse sit.</p>
+    </div>
+    <button>Medico <i class="fa-solid fa-heart"></i></button> <br>
+    <a href="https://campus.talentotechbogota.co" class="enlace" target="_blank">TalentoTech</a>
+
+    <div>
+        <h1>Listas</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>Pereira</td>
+                <td>ruiz@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cucuta</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">Relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">fijado</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Imagenes</h1>
+        <img class="imagen1" src="https://weremote.net/wp-content/uploads/2022/08/mujer-sonriente-apunta-arriba.jpg">
+        <img class="imagen2" src="https://media.istockphoto.com/id/1480574526/es/foto/personas-multigeneracionales-felices-divirti%C3%A9ndose-sentadas-en-el-c%C3%A9sped-de-un-parque-p%C3%BAblico.jpg?s=612x612&w=0&k=20&c=ijIadS4ax0rpKdgAeBsOTpt9LXGImLhG7nOk5qUcscg=">
+        <img class="imagen3"src="https://img.freepik.com/psd-gratis/ilustracion-3d-avatar-o-perfil-humano_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1687694167.1715212800&semt=ais"> 
+    </div>
+</body>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+<style>
+    .color1 {
+        background-color: tomato;
+        color: #C5D61D;
+        border: solid;
+        border-color: rgb(9, 42, 205);
+        opacity: 0.5;
+    }
+
+    .color2{
+        /* Tamaño del elemento */
+        width: 80%;
+        height: 300px;
+        /* Imagen de fondo */
+        background-image: url("https://acis.org.co/portal/sites/default/files/mintic.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll; 
+                
+    }
+
+    .bordes {
+        /* Bordes */
+        border-style: dotted solid dashed double;
+        border-color: #15e2c0;
+        border-width: 10px;
+        border-radius: 200px;
+    }
+
+    .margenes {
+        /* Margenes */
+        margin-left: 50px;
+        margin-top: 100px; 
+        margin-bottom: 30px;
+    }
+
+    .padding {
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .alineacion-texto {
+        text-align: center;
+        text-align-last: right;
+        /* direction: rtl; */
+        /* unicode-bidi: bidi-override; */
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 10px;
+        
+        text-transform: capitalize;
+        text-indent: 100px;
+        letter-spacing: 5px;
+        line-height: 2;
+        word-spacing: 10px;
+
+        font-weight: bold;
+    }
+
+    .text-shadow {
+        color: tomato;
+        text-shadow: 2px 2px 5px #e215b6;
+        font-family: 'Audiowide', sans-serif;
+        font-style: oblique;
+        font-size: 60px;        
+    }
+    /* PsuedoClases */
+    .enlace {
+        text-decoration: none;
+        background-color: #de39b4;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: yellow;
+        border-style: solid;
+        display: inline-block;
+        text-align: center;
+        cursor: progress;
+    }
+    .enlace:hover {
+        color: #C5D61D;
+        background-color: aquamarine;
+    }
+
+    .enlace:active {
+        color: #15e2c0;
+    }
+
+    ul>li {
+       list-style-type: square; 
+       background-color: white;
+       display: inline;
+       visibility: ;
+       /* list-style-image: url('https://raw.githubusercontent.com/Marvel999/Android-Loading-Animation/master/LoadingAnimation/src/main/res/drawable/triad_ring.gif'); */
+    }
+
+    ul {
+        background-color: tomato;
+        opacity: 0.6;
+        padding: 20px;
+    }
+    /* Estilos Tabla */
+    table#estilo-tabla {
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-color: #2260bd;
+    }
+
+    table#estilo-tabla tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    table#estilo-tabla tr:hover {
+        background-color: #C5D61D;
+        color: aliceblue;
+    }
+
+    table#estilo-tabla th {
+        background-color: #04918a;
+        color: rgb(167, 240, 140);
+    }
+    /*se adapta a la posición del padre*/
+.relative {
+border: 3px solid #2260bd;
+width: 400px;
+height: 200px;
+position: relative;
+}
+/*mantiene su posición fija*/
+.absolute {
+    border: 3px solid #e215bd;
+    width: 200px;
+    height: 100px;
+    right: 0;
+    top: 80px;
+    position: absolute;
+}
+/*deja fijo el elemento dentro de la página*/
+.fixed {
+    border: 3px solid green;
+    width: 100px;
+    height: 50px;
+    left: o;
+    top: 200px;
+    position: fixed;
+    background-color: #C5D61D;
+}
+/*pseudoelementos*/
+p::first-line {
+color: red;
+background-color: aquamarine;
+font-size: 50px;
+}
+.imagen1 {
+    width: 10%;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    outline-color: #e215b6;
+    outline-style: solid;
+}
+.imagen2 {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 5px 1px 20px red;
+}
+.imagen3 {
+    width: 50%;
+    display: block;
+    margin-top: auto;
+    filter: blur(4px);
+}
+    
+</style>
+</html>

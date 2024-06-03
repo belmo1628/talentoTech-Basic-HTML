@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BBS INGENIERÍA SAS</title>
+	<style>
+		/*comentario de prueba*/
+	body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+	.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	}
+	.logo {
+	text-align: center;
+	margin-bottom: 20px;
+	}
+	.logo img {
+	max-width: 200px; /* Ajusta el tamaño de la imagen a 200px de ancho */
+	height: auto; /* Mantiene la relación de aspecto de la imagen */
+	}
+	.services {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 20px;
+	}
+	.services li {
+	margin-bottom: 10px;
+	}
+	.contact {
+	margin-bottom: 20px;
+	}
+	.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	}
+	.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+	</style>
+	</head>
+	<body id ="body">
+		<div class="selector_tema">
+			<select name="" id="tema" onchange="cambiarTema()">
+				<option value="light">Claro</option>
+				<option value="dark">Oscuro</option>
+				<option value="crazy">Loco</option>
+			</select>
+		</div>
+	<div class="container">
+	<div class="logo">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeRCRAySFS71VXkOIK20nTiXBSq4AmM_PDawxZEod&s" alt="BBS Logo">
+	</div>
+	<p>Empresa dedicada a prestar servicios profesionales de asesoría en Ingeniería Civil</p>
+	<h2>SERVICIOS</h2>
+	<ul class="services">
+	<li>1. Diseño geométrico de vías</li>
+	<li>2. Diseño de pavimentos rígidos y flexibles</li>
+	<li>3. Análisis y Diseños geotécnicos</li>
+	<li>4. Diseños de Programas de Gerencia</li>
+	<li>5. Diseño e implementación de Planes de Calidad en vías</li>
+	<li>6. Análisis y diseños estructurales especiales</li>
+	</ul>
+	<div class="contact">
+	<h3>DATOS DE CONTACTO</h3>
+	<p>Teléfono: +57 3163084290</p>
+	<p>Correo Electrónico: bbs.ingenieria.sas@gmail.com</p>
+	</div>
+	<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qJX89OMWsnU?si=dpR_gH5mKcFuPViI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	</div>
+	</body>
+	</html>
+	<br>
+	<h1>FORMULARIO DE CONTACTO</h1>
+	<!-- Formulario -->
+    <form method="POST">
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="Nombre" id = "Nombre"> <br>
+		<label for="">apellidos</label>
+        <input type="text" placeholder="Escriba los apellidos" required name="Apellidos" id = "Apellidos"> 
+		<br>
+	<!-- Selector -->
+	<label for="">Documento de Identidad</label>
+		<select name="" id="" required name="Documento_de_identidad">
+			  <option value="">-</option>
+			  <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+			  <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+			  <option value="Pasaporte">Pasaporte</option>
+			  <label for="">Documento de identidad</label>
+			  <input type="text" name="text" id = "text">
+		</select> <br>
+	<!-- Selector -->
+      <label for="">Ciudad</label>
+      <select name="" id="" required name="Ciudad">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+      </select> <br>
+	  <label for="">Teléfono</label> 
+	  <input type="tel" placeholder="Escriba el número de Teléfono" required name="tel" id = "tel"> 
+	  <br>
+	  <label for="">Dirección</label> 
+	  <input type="text" placeholder="Escriba la dirección" required name="dir" id = "dir"> 
+	  <br>
+	  <label for="">Correo electrónico</label> 
+	  <input type="email" placeholder="Escriba el correo electrónico" required name="email" id = "email"> 
+	  <br>
+	  <!--documentos anexos-->
+	  <label for="">Documentos anexos</label>
+        <input type="file" required placeholder="Subir documentos anesos" accept="image/*" name="file" id = "file"> <br>
+	  <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento" id = "fecha_nacimiento">
+        <br>
+<!-- Button -->
+<button type="button" onclick="enviarFormulario()">Enviar</button>
+<body>
+	<!--TABLA DE PROYECTOS-->
+	<h1>PROYECTOS EN EL AÑO 2023</h1>
+	<table style="background: aquamarine;">
+        <tr style="background-color: brown; color: white;">
+            <th>PROYECTO</th>
+            <th>FECHA</th>
+            <th>CIUDAD</th>
+            <th>VALOR (Miles de $)</th>
+        </tr>
+        <tr>
+            <td style="border: lpx solid black">Diagnóstico y Diseño puente el Morro</td>
+            <td>Enero 2023</td>
+            <td>Tumaco</td>
+            <td>355000</td>
+        </tr>
+		<tr>
+            <td>Diagnóstico y Diseño puente el Pindo</td>
+            <td>Febrero 2023</td>
+            <td>Tumaco</td>
+            <td>255000</td>
+        </tr>
+		<tr>
+            <td>Diagnóstico y Diseño puente Agua Clara</td>
+            <td>Marzo 2023</td>
+            <td>Tumaco</td>
+            <td>325000</td>
+        </tr>
+		<tr>
+            <td>Elaboración e implantación Programa de Gerencia</td>
+            <td>Abril 2023</td>
+            <td>Tumaco</td>
+            <td>255000</td>
+        </tr>
+		<tr>
+            <td>Diseño estructural Placa Huella</td>
+            <td>Mayo 2023</td>
+            <td>Ataco</td>
+            <td>315000</td>
+        </tr>
+		<tr>
+            <td>Diseño estructural Placa Huella y pontón</td>
+            <td>Junio 2023</td>
+            <td>Cármen de Chucurí</td>
+            <td>415000</td>
+        </tr>
+		<tr>
+            <td>Diseño geométrico y estructural Placa Huella</td>
+            <td>Julio 2023</td>
+            <td>Guasca</td>
+            <td>385000</td>
+        </tr>
+		<tr>
+            <td>Curso para operadores instalación mezclas asfálticas</td>
+            <td>Agosto 2023</td>
+            <td>San Antonio</td>
+            <td>125000</td>
+        </tr>
+		<tr>
+            <td>Elaboración e implantación Programa de Gerencia</td>
+            <td>Septiembre 2023</td>
+            <td>Líbano</td>
+            <td>280000</td>
+		<tr>
+			<td>Análisis financiero Proyectos de vías</td>
+			<td>Octubre 2023</td>
+			<td>Leticia</td>
+			<td>220000</td>
+		</tr>
+		<tr>
+			<td>Elaboración Planes de Calidad</td>
+			<td>Noviembre 2023</td>
+			<td>Líbano</td>
+			<td>45000</td>
+		</tr>
+		<tr>
+            <td>Diseño Obras de Contención vía la Palma-Pacho</td>
+            <td>Diciembre 2023</td>
+            <td>La Palma</td>
+            <td>355000</td>
+		</tr>
+        </th>
+    </table>
+
+	<br>
+	<br>
+	<br>
+</body>
+<script>
+    function cambiarTema(){
+        //elemento que va a cambiar
+        var body = document.getElementById("tema").value
+        var fondo =""
+        var letra =""
+        if(tema == "light"){
+            fondo ="white"
+            letra = "black"
+        }else if(tema == "dark"){
+            fondo ="black"
+            letra = "white"
+        }else if(tema == "crazy"){
+            fondo = "tomato"
+            letra = "yellow"
+        }
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
+	function enviarFormulario(){
+		var nombre = document.getElementById ("nombre").value
+		var apellidos = document.getElementById ("apellidos").value
+		//completar
+		if (nombre&&apellidos) {
+			alert("los datos del formulario son: "+nombre +" "+apellidos)
+		}
+	}
+	//este es un mensaje de prueba
+</script>
