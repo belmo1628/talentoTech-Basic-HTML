@@ -1,4 +1,5 @@
 const UserSchema = require("../models/Usuario") // Accedemos a los datos del modelo
+const bcrypt = require("bcrypt") //importamos la libreria de encriptación
 
 // Permite agrupar atributos y funciones
 class UsuarioController {
@@ -9,12 +10,13 @@ class UsuarioController {
     }
 
     async createUsuario(req, res){
-       
+       //encriptando la contraseña
+       const hashedPasword = await bcrypt.hash(req.body.pasword, 10)
         var nuevoUsuario = {
             nombre: req.body.nombre,
             apellidos: req.body.apellidos,
             correo: req.body.correo,
-            password: req.body.password,
+            password:hashedPasword, //guardo la contraseña hasheada
         }
 
         await UserSchema(nuevoUsuario).save()
