@@ -16,6 +16,8 @@ app.use(express.json()) // Analizar informacion en formato JSON
 const UserRoutes = require('./routes/UserRoutes')
 app.use('/', UserRoutes)
 
+const CarroRoutes = require('./routes/CarroRoutes')//acceder a la información de carro
+app.use('/', CarroRoutes)
 
 // Creando el servicio web
 // Funcionalidad de nuestra API
