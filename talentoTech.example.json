@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "667744be43cb23742e4f47f7"
+  },
+  "name": "Juán",
+  "lastname": "Pérez",
+  "age": 45,
+  "city": "Medellín",
+  "neigbor hood": "El Poblado",
+  "career": "System Engineer",
+  "salary": 3200
+},
+{
+  "_id": {
+    "$oid": "6677464743cb23742e4f47f8"
+  },
+  "name": "Nelson",
+  "lastname": "Beltrán",
+  "age": 58,
+  "city": "Bogotá",
+  "neigbor hood": "San Cristobal",
+  "career": "Civil Engineer",
+  "salary": 4500
+},
+{
+  "_id": {
+    "$oid": "6677469e43cb23742e4f47f9"
+  },
+  "name": "Emma",
+  "lastname": "Beltrán",
+  "age": 19,
+  "city": "Bogotá",
+  "neigbor hood": "San Cristobal",
+  "career": "Biotecnical Engineer",
+  "salary": 1500
+},
+{
+  "_id": {
+    "$oid": "6677470f43cb23742e4f47fa"
+  },
+  "name": "Luis",
+  "lastname": "Beltrán",
+  "age": 24,
+  "city": "Bogotá",
+  "neigbor hood": "San Cristobal",
+  "career": "Civil Engineer",
+  "salary": 1600
+},
+{
+  "_id": {
+    "$oid": "6677472843cb23742e4f47fb"
+  },
+  "name": "Luz",
+  "lastname": "García",
+  "age": 58,
+  "city": "Bogotá",
+  "neigbor hood": "San Cristobal",
+  "career": "Administration",
+  "salary": 2500
+},
+{
+  "_id": {
+    "$oid": "6677476643cb23742e4f47fc"
+  },
+  "name": "Ivan",
+  "lastname": "Giraldo",
+  "age": 52,
+  "city": "Bogotá",
+  "neigbor hood": "Patio Bonito",
+  "career": "Civil Engineer",
+  "salary": 3500
+},
+{
+  "_id": {
+    "$oid": "667747a443cb23742e4f47fd"
+  },
+  "name": "Mauricio",
+  "lastname": "Pinzón",
+  "age": 44,
+  "city": "Bogotá",
+  "neigbor hood": "Américas",
+  "career": "Ambiental Engineer",
+  "salary": 3400
+},
+{
+  "_id": {
+    "$oid": "667747f543cb23742e4f47fe"
+  },
+  "name": "Lizet",
+  "lastname": "Gonzales",
+  "age": 31,
+  "city": "Bogotá",
+  "neigbor hood": "Pinares",
+  "career": "administrator",
+  "salary": 2200
+},
+{
+  "_id": {
+    "$oid": "6677483243cb23742e4f47ff"
+  },
+  "name": "Steven",
+  "lastname": "Rodriguez",
+  "age": 58,
+  "city": "Bogotá",
+  "neigbor hood": "Pinares",
+  "career": "tecnology",
+  "salary": 2500
+}]
